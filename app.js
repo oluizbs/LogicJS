@@ -93,3 +93,4 @@ function multiplicaN(valor){
 let result = multiplicaN(2);
 console.log(result);
 
+//Isso realmente está funcionando??????
