@@ -41,7 +41,7 @@
 //var nota2 = parseInt(prompt("Digite a segunda nota: "));
 //var elev = nota1 ** nota2;
 //alert(""+nota1 ,"elevado à "+nota2 ,"é igual a: "+elev);
-
+/* 
 let nome = "Luiz";
 let idade = 17;
 let email = "luiz@gmail.com"
@@ -93,3 +93,29 @@ function multiplicaN(valor){
 let result = multiplicaN(2);
 console.log(result);
 
+ */
+
+//Chamando botão
+let bt = document.querySelector(".butt");
+
+//Adicionando evento ao botão
+bt.addEventListener("click", function somaMedia(){
+    //Pegando os valores dos inputs
+    let n1 = document.querySelector(".num1").value;
+    let n2 = document.querySelector(".num2").value;
+
+    //Calculo e média
+    m = (parseFloat(n1) + parseFloat(n2))/2;
+    let mediap = document.querySelector(".mediap");
+    mediap.innerHTML = m;
+    
+    //Resultado final (if e else)
+    let resut = document.querySelector(".resultFim");
+    if(m >= 5){
+        resut.innerHTML = "Aprovado!";
+    }
+    else{
+        resut.innerHTML = "Em recuperação!";
+    }
+
+});
